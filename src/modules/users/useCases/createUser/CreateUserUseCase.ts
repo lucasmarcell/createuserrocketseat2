@@ -16,7 +16,7 @@ class CreateUserUseCase {
       throw new Error("Email Already Exists!!");
     }
 
-    return this.usersRepository.create({ name, email })
+    return this.usersRepository.create({ name, email });
   }
 }
 
